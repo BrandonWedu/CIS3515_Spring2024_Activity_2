@@ -18,8 +18,7 @@ class MainActivity : AppCompatActivity() {
         for (i in 0..100 step 2){numberArray.add(i)}
 
         /* TODO Step 2: Create adapter to display items from array in Spinner */
-        //spinner.adapter = ArrayAdapter...
-
+        spinner.adapter = ArrayAdapter(this,android.R.layout.simple_spinner_item,numberArray)
 
         // TODO Step 3: Change TextView's text size to the number selected in the Spinner */
         //spinner.onItemSelectedListener = object: ...
